@@ -1,0 +1,499 @@
+source: https://app.netlify.com/sites/workhuman-next/deploys/664b50670b847d000844a5bf
+
+9:31:14 AM: Netlify Build
+9:31:14 AM: ────────────────────────────────────────────────────────────────
+9:31:14 AM: ​
+9:31:14 AM: ❯ Version
+9:31:14 AM:   @netlify/build 29.41.3
+9:31:14 AM: ​
+9:31:14 AM: ❯ Flags
+9:31:14 AM:   baseRelDir: true
+9:31:14 AM:   buildId: 664b50670b847d000844a5bd
+9:31:14 AM:   deployId: 664b50670b847d000844a5bf
+9:31:14 AM: ​
+9:31:14 AM: ❯ Current directory
+9:31:14 AM:   /opt/build/repo/apps/web
+9:31:14 AM: ​
+9:31:14 AM: ❯ Config file
+9:31:14 AM:   /opt/build/repo/apps/web/netlify.toml
+9:31:14 AM: ​
+9:31:14 AM: ❯ Context
+9:31:14 AM:   deploy-preview
+9:31:14 AM: ​
+9:31:14 AM: ❯ Installing plugins
+9:31:14 AM:    - @netlify/plugin-nextjs@5.2.2
+9:31:16 AM: ​
+9:31:16 AM: ❯ Using Next.js Runtime - v5.2.2
+9:31:16 AM: ​
+9:31:16 AM: ❯ Loading plugins
+9:31:16 AM:    - @netlify/plugin-contentful-buildtime@0.0.3 from Netlify app
+9:31:16 AM:    - @netlify/plugin-lighthouse@6.0.0 from Netlify app
+9:31:17 AM: ​
+9:31:17 AM: @netlify/plugin-nextjs (onPreBuild event)
+9:31:17 AM: ────────────────────────────────────────────────────────────────
+9:31:17 AM: ​
+9:31:17 AM: No Next.js cache to restore
+9:31:17 AM: ​
+9:31:17 AM: (@netlify/plugin-nextjs onPreBuild completed in 17ms)
+9:31:17 AM: ​
+9:31:17 AM: @netlify/plugin-contentful-buildtime (onPreBuild event)
+9:31:17 AM: ────────────────────────────────────────────────────────────────
+9:31:17 AM: ​
+9:31:17 AM: Mutating env: IS_PREVIEW="true"
+9:31:17 AM: ​
+9:31:17 AM: (@netlify/plugin-contentful-buildtime onPreBuild completed in 8ms)
+9:31:17 AM: ​
+9:31:17 AM: build.command from netlify.toml
+9:31:17 AM: ────────────────────────────────────────────────────────────────
+9:31:17 AM: ​
+9:31:17 AM: $ npx turbo run build --filter='web'
+9:31:17 AM: npm WARN ignoring workspace config at /opt/build/repo/apps/web/.npmrc
+9:31:18 AM: • Packages in scope: web
+9:31:18 AM: • Running build in 1 packages
+9:31:18 AM: • Remote caching disabled
+9:31:18 AM: web:build: cache bypass, force executing 510460fb8ef26b24
+9:31:18 AM: web:build: npm WARN ignoring workspace config at /opt/build/repo/apps/web/.npmrc
+9:31:18 AM: web:build:
+9:31:18 AM: web:build: > web@0.1.0 build
+9:31:18 AM: web:build: > next build
+9:31:18 AM: web:build:
+9:31:19 AM: web:build:  ⚠ Invalid next.config.js options detected:
+9:31:19 AM: web:build:  ⚠     Unrecognized key(s) in object: 'api'
+9:31:19 AM: web:build:  ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+9:31:19 AM: web:build: ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+9:31:19 AM: web:build:   ▲ Next.js 14.2.3
+9:31:19 AM: web:build:   - Experiments (use with caution):
+9:31:19 AM: web:build:     · scrollRestoration
+9:31:19 AM: web:build:     · forceSwcTransforms
+9:31:19 AM: web:build:
+9:31:19 AM: web:build:    Linting and checking validity of types ...
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./netlify/functions/deploy-succeeded-background.ts
+9:31:33 AM: web:build: 14:3  Warning: Unexpected console statement.  no-console
+9:31:33 AM: web:build: 15:3  Warning: Unexpected console statement.  no-console
+9:31:33 AM: web:build: 19:7  Warning: Unexpected console statement.  no-console
+9:31:33 AM: web:build: 22:7  Warning: Unexpected console statement.  no-console
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./netlify/functions/life-at-workhuman-rss.ts
+9:31:33 AM: web:build: 54:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build: 106:7  Warning: Unexpected console statement.  no-console
+9:31:33 AM: web:build: 115:31  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build: 164:24  Warning: Unexpected unnamed async function.  func-names
+9:31:33 AM: web:build: 164:51  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./netlify/functions/rss.ts
+9:31:33 AM: web:build: 58:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build: 110:7  Warning: Unexpected console statement.  no-console
+9:31:33 AM: web:build: 119:31  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build: 167:24  Warning: Unexpected unnamed async function.  func-names
+9:31:33 AM: web:build: 167:51  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./pages/_app.tsx
+9:31:33 AM: web:build: 24:31  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./pages/_document.tsx
+9:31:33 AM: web:build: 31:11  Warning: Prefer `next/script` component when using the inline script for Google Analytics. See: https://nextjs.org/docs/messages/next-script-for-ga  @next/next/next-script-for-ga
+9:31:33 AM: web:build: 53:15  Warning: Unexpected console statement.  no-console
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./pages/api/algolia-on-demand-background.ts
+9:31:33 AM: web:build: 28:1  Warning: Assign arrow function to a variable before exporting as module default  import/no-anonymous-default-export
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./pages/company/leadership/[slug]/index.tsx
+9:31:33 AM: web:build: 104:61  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build: 125:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./pages/demo.tsx
+9:31:33 AM: web:build: 33:7  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./pages/events/webinars/[slug].tsx
+9:31:33 AM: web:build: 17:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./pages/whats-new/spring-2024.tsx
+9:31:33 AM: web:build: 16:1  Warning: 'react-player' should be listed in the project's dependencies. Run 'npm i -S react-player' to add it  import/no-extraneous-dependencies
+web:build:
+9:31:33 AM: web:build: ./templates/AuthorPosts.tsx
+9:31:33 AM: web:build: 40:61  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build: 55:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: ./templates/ListingPages.tsx
+9:31:33 AM: web:build: 36:1  Warning: 'swiper' should be listed in the project's dependencies. Run 'npm i -S swiper' to add it  import/no-extraneous-dependencies
+web:build:
+9:31:33 AM: web:build: ./templates/Webinar.tsx
+9:31:33 AM: web:build: 40:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+9:31:33 AM: web:build:
+9:31:33 AM: web:build: info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+9:31:40 AM: web:build:    Creating an optimized production build ...
+9:31:41 AM: web:build:  ⚠ Found lockfile missing swc dependencies, run next locally to automatically patch
+9:31:49 AM: web:build:  ⚠ Found lockfile missing swc dependencies, run next locally to automatically patch
+9:31:49 AM: web:build:  ⚠ Found lockfile missing swc dependencies, run next locally to automatically patch
+9:32:03 AM: web:build:  ✓ Compiled successfully
+9:32:03 AM: web:build:    Collecting page data ...
+9:32:04 AM: web:build:  ⚠ Found lockfile missing swc dependencies, run next locally to automatically patch
+9:32:17 AM: web:build:    Generating static pages (0/608) ...
+9:32:25 AM: web:build: Warning: data for page "/campaign/[...slug]" (path "/campaign/social-recognition/") is 705 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:25 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:25 AM: web:build: Warning: data for page "/campaign/[...slug]" (path "/campaign/social-recognition/") is 710 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:25 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:25 AM: web:build: Warning: data for page "/campaign/[...slug]" (path "/campaign/social-recognition/") is 710 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:25 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:25 AM: web:build: Warning: data for page "/[...slug]" (path "/about-us/") is 226 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:25 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:25 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/conversations/") is 238 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:25 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:25 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/life-events/") is 255 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:25 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:25 AM: web:build: Warning: data for page "/[...slug]" (path "/contact-us/") is 194 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:25 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:25 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/service-milestones/") is 360 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:25 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:25 AM: web:build: Warning: data for page "/[...slug]" (path "/capabilities/workhuman-iq/") is 366 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:25 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/technology/") is 166 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/capabilities/integrations/") is 712 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/finance-legal/") is 260 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/capabilities/inclusion-advisor/") is 473 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/human-experience-hx/") is 253 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/strategy-consulting-research/") is 272 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/") is 385 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/thank-you/") is 272 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/marketing/") is 251 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/customer-strategy/") is 255 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/") is 159 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/sales/") is 245 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/thank-you-demo/") is 272 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/capabilities/rewards/") is 904 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build:    Generating static pages (152/608)
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/consulting-practice/") is 497 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/ent_product_documentation/") is 128 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/conversations/") is 245 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/community-celebrations/") is 1.55 MB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/life-events/") is 237 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/marketing/") is 255 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:26 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/strategy-consulting-research/") is 276 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:26 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:27 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/community-celebrations/") is 1.13 MB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:27 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:27 AM: web:build: Warning: data for page "/[...slug]" (path "/ent_product_documentation/") is 132 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:27 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:27 AM: web:build: Warning: data for page "/[...slug]" (path "/platform/social-recognition/") is 734 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:27 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:28 AM: web:build: Warning: data for page "/[...slug]" (path "/company/careers/marketing/") is 256 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:28 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:30 AM: web:build:    Generating static pages (304/608)
+9:32:36 AM: web:build:    Generating static pages (456/608)
+9:32:38 AM: web:build: Warning: data for page "/demo" (path "/demo/") is 237 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:38 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:38 AM: web:build: Warning: data for page "/events/spotlight/the-future-proof-workforce" (path "/events/spotlight/the-future-proof-workforce/") is 867 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:38 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:38 AM: web:build: Warning: data for page "/events/spotlight/the-future-proof-workforce" (path "/events/spotlight/the-future-proof-workforce/") is 868 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:38 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:38 AM: web:build: Warning: data for page "/events/spotlight/the-future-proof-workforce" (path "/events/spotlight/the-future-proof-workforce/") is 869 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:38 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:39 AM: web:build: Warning: data for page "/" is 156 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:39 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:39 AM: web:build: Warning: data for page "/" is 159 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:39 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:39 AM: web:build: Warning: data for page "/" is 149 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+9:32:39 AM: web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+9:32:40 AM: web:build:  ✓ Generating static pages (608/608)
+9:33:21 AM: web:build:    Finalizing page optimization ...
+9:33:21 AM: web:build:    Collecting build traces ...
+9:33:23 AM: web:build:
+9:33:23 AM: web:build: Route (pages)                                                                             Size     First Load JS
+9:33:23 AM: web:build: ┌ ● /                                                                                     7.96 kB         621 kB
+9:33:23 AM: web:build: ├   /_app                                                                                 0 B             247 kB
+9:33:23 AM: web:build: ├ ● /[...slug] (ISR: 10 Seconds) (47145 ms)                                               352 B           619 kB
+9:33:23 AM: web:build: ├   ├ /en-US/platform/community-celebrations (979 ms)
+9:33:23 AM: web:build: ├   ├ /de/platform/community-celebrations (971 ms)
+9:33:23 AM: web:build: ├   ├ /fr/platform/community-celebrations (731 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/capabilities/rewards (680 ms)
+9:33:23 AM: web:build: ├   ├ /de/capabilities/rewards (672 ms)
+9:33:23 AM: web:build: ├   ├ /fr/capabilities/rewards (616 ms)
+9:33:23 AM: web:build: ├   ├ /de/company/careers (503 ms)
+9:33:23 AM: web:build: ├   └ [+134 more paths] (avg 313 ms)
+9:33:23 AM: web:build: ├ ○ /404                                                                                  922 B           551 kB
+9:33:23 AM: web:build: ├ ƒ /api/algolia-on-demand-background                                                     0 B             247 kB
+9:33:23 AM: web:build: ├ ƒ /api/disable-draft                                                                    0 B             247 kB
+9:33:23 AM: web:build: ├ ƒ /api/draft                                                                            0 B             247 kB
+9:33:23 AM: web:build: ├ ƒ /api/revalidate                                                                       0 B             247 kB
+9:33:23 AM: web:build: ├ ƒ /authors-sitemap.xml                                                                  254 B           248 kB
+9:33:23 AM: web:build: ├ ● /authors/[...slug]                                                                    1.28 kB         559 kB
+9:33:23 AM: web:build: ├ ● /blog                                                                                 359 B           687 kB
+9:33:23 AM: web:build: ├ ƒ /blog-sitemap.xml                                                                     255 B           248 kB
+9:33:23 AM: web:build: ├ ● /blog/[...slug]                                                                       380 B           566 kB
+9:33:23 AM: web:build: ├ ● /blog/page/[pageNumber] (40691 ms)                                                    372 B           687 kB
+9:33:23 AM: web:build: ├   ├ /en-US/blog/page/13 (1319 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/blog/page/2 (1308 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/blog/page/9 (1254 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/blog/page/12 (1241 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/blog/page/22 (1237 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/blog/page/16 (1233 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/blog/page/21 (1231 ms)
+9:33:23 AM: web:build: ├   └ [+50 more paths] (avg 637 ms)
+9:33:23 AM: web:build: ├ ● /campaign/[...slug] (ISR: 10 Seconds) (1194 ms)                                       2.66 kB         619 kB
+9:33:23 AM: web:build: ├   ├ /en-US/campaign/social-recognition (414 ms)
+9:33:23 AM: web:build: ├   ├ /de/campaign/social-recognition (392 ms)
+9:33:23 AM: web:build: ├   └ /fr/campaign/social-recognition (388 ms)
+9:33:23 AM: web:build: ├ ƒ /casestudies-sitemap.xml                                                              259 B           248 kB
+9:33:23 AM: web:build: ├ ● /company/careers/life-at-workhuman                                                    382 B           687 kB
+9:33:23 AM: web:build: ├ ● /company/careers/life-at-workhuman/[...slug]                                          415 B           566 kB
+9:33:23 AM: web:build: ├ ● /company/careers/life-at-workhuman/page/[pageNumber] (13954 ms)                       395 B           687 kB
+9:33:23 AM: web:build: ├   ├ /en-US/company/careers/life-at-workhuman/page/5 (2159 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/company/careers/life-at-workhuman/page/1 (2056 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/company/careers/life-at-workhuman/page/4 (1967 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/company/careers/life-at-workhuman/page/7 (1967 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/company/careers/life-at-workhuman/page/2 (1966 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/company/careers/life-at-workhuman/page/3 (1964 ms)
+9:33:23 AM: web:build: ├   └ /en-US/company/careers/life-at-workhuman/page/6 (1875 ms)
+9:33:23 AM: web:build: ├ ● /company/leadership                                                                   3.04 kB         556 kB
+9:33:23 AM: web:build: ├ ● /company/leadership/[slug]                                                            4.79 kB         557 kB
+9:33:23 AM: web:build: ├ ● /company/testimonial-videos                                                           392 B           687 kB
+9:33:23 AM: web:build: ├ ● /cookie-policy                                                                        3.26 kB         619 kB
+9:33:23 AM: web:build: ├ ● /demo                                                                                 2.55 kB         618 kB
+9:33:23 AM: web:build: ├ ● /events                                                                               4.19 kB         620 kB
+9:33:23 AM: web:build: ├ ● /events/become-a-speaker                                                              4.13 kB         620 kB
+9:33:23 AM: web:build: ├ ● /events/spotlight                                                                     368 B           687 kB
+9:33:23 AM: web:build: ├ ● /events/spotlight/[series]/[slug]                                                     2.69 kB         619 kB
+9:33:23 AM: web:build: ├ ● /events/spotlight/[series]/[slug]/broadcast                                           1.34 kB         617 kB
+9:33:23 AM: web:build: ├ ● /events/spotlight/[series]/[slug]/replay                                              1.56 kB         617 kB
+9:33:23 AM: web:build: ├ ● /events/spotlight/[series]/[slug]/thank-you                                           518 B           614 kB
+9:33:23 AM: web:build: ├ ● /events/spotlight/[series]/[slug]/thank-you-non                                       522 B           614 kB
+9:33:23 AM: web:build: ├ ● /events/spotlight/page/[pageNumber] (ISR: 10 Seconds)                                 378 B           687 kB
+9:33:23 AM: web:build: ├   └ /en-US/events/spotlight/page/1
+9:33:23 AM: web:build: ├ ● /events/spotlight/the-future-proof-workforce                                          398 B           619 kB
+9:33:23 AM: web:build: ├ ● /events/spotlight/the-future-proof-workforce/thank-you                                406 B           619 kB
+9:33:23 AM: web:build: ├ ● /events/spotlight/the-future-proof-workforce/thank-you-non                            409 B           619 kB
+9:33:23 AM: web:build: ├ ● /events/webinars                                                                      387 B           687 kB
+9:33:23 AM: web:build: ├ ● /events/webinars/[slug]                                                               3.32 kB         567 kB
+9:33:23 AM: web:build: ├ ● /events/webinars/page/[pageNumber] (2760 ms)                                          380 B           687 kB
+9:33:23 AM: web:build: ├   ├ /en-US/events/webinars/page/4 (656 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/events/webinars/page/3 (584 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/events/webinars/page/2 (582 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/events/webinars/page/5 (480 ms)
+9:33:23 AM: web:build: ├   └ /en-US/events/webinars/page/1 (458 ms)
+9:33:23 AM: web:build: ├ ○ /gender-pay-gap-report/dublin-2022 (397 ms)                                           5.38 kB         628 kB
+9:33:23 AM: web:build: ├ ○ /gender-pay-gap-report/dublin-2023 (387 ms)                                           5.44 kB         628 kB
+9:33:23 AM: web:build: ├ ƒ /pages-sitemap.xml                                                                    255 B           248 kB
+9:33:23 AM: web:build: ├ ƒ /podcasts-sitemap.xml                                                                 256 B           248 kB
+9:33:23 AM: web:build: ├ ● /resources                                                                            361 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/gallup                                                                     368 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/gallup/page/[pageNumber] (1699 ms)                                         381 B           687 kB
+9:33:23 AM: web:build: ├   ├ /en-US/resources/gallup/page/3 (571 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/resources/gallup/page/1 (564 ms)
+9:33:23 AM: web:build: ├   └ /en-US/resources/gallup/page/2 (564 ms)
+9:33:23 AM: web:build: ├ ● /resources/human-workplace-index                                                      380 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/human-workplace-index/global                                               387 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/human-workplace-index/global/page/[pageNumber] (ISR: 10 Seconds) (362 ms)  399 B           687 kB
+9:33:23 AM: web:build: ├   └ /en-US/resources/human-workplace-index/global/page/1 (362 ms)
+9:33:23 AM: web:build: ├ ● /resources/human-workplace-index/ire                                                  384 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/human-workplace-index/ire/page/[pageNumber] (ISR: 10 Seconds) (1352 ms)    396 B           687 kB
+9:33:23 AM: web:build: ├   └ /en-US/resources/human-workplace-index/ire/page/1 (1352 ms)
+9:33:23 AM: web:build: ├ ● /resources/human-workplace-index/uk                                                   384 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/human-workplace-index/uk/page/[pageNumber] (ISR: 10 Seconds) (446 ms)      395 B           687 kB
+9:33:23 AM: web:build: ├   └ /en-US/resources/human-workplace-index/uk/page/1 (446 ms)
+9:33:23 AM: web:build: ├ ● /resources/human-workplace-index/usa                                                  384 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/human-workplace-index/usa/page/[pageNumber] (5280 ms)                      395 B           687 kB
+9:33:23 AM: web:build: ├   ├ /en-US/resources/human-workplace-index/usa/page/1 (1865 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/resources/human-workplace-index/usa/page/2 (1756 ms)
+9:33:23 AM: web:build: ├   └ /en-US/resources/human-workplace-index/usa/page/3 (1659 ms)
+9:33:23 AM: web:build: ├ ● /resources/product-briefs                                                             375 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/product-briefs/page/[pageNumber] (ISR: 10 Seconds) (1154 ms)               388 B           687 kB
+9:33:23 AM: web:build: ├   └ /en-US/resources/product-briefs/page/1 (1154 ms)
+9:33:23 AM: web:build: ├ ● /resources/reports-guides                                                             374 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/reports-guides/[...slug]                                                   4.52 kB         568 kB
+9:33:23 AM: web:build: ├ ● /resources/reports-guides/page/[pageNumber] (104884 ms)                               386 B           687 kB
+9:33:23 AM: web:build: ├   ├ /en-US/resources/reports-guides/page/5 (4959 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/resources/reports-guides/page/8 (4871 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/resources/reports-guides/page/6 (4862 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/resources/reports-guides/page/2 (4850 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/resources/reports-guides/page/3 (4849 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/resources/reports-guides/page/4 (4849 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/resources/reports-guides/page/14 (4846 ms)
+9:33:23 AM: web:build: ├   └ [+18 more paths] (avg 3933 ms)
+9:33:23 AM: web:build: ├ ● /resources/research                                                                   367 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/thought-leadership                                                         378 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/thought-leadership/page/[pageNumber] (ISR: 10 Seconds) (1581 ms)           391 B           687 kB
+9:33:23 AM: web:build: ├   └ /en-US/resources/thought-leadership/page/1 (1581 ms)
+9:33:23 AM: web:build: ├ ● /resources/workhuman-iq-reports                                                       380 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/workhuman-iq-reports/page/[pageNumber] (2471 ms)                           392 B           687 kB
+9:33:23 AM: web:build: ├   ├ /en-US/resources/workhuman-iq-reports/page/1 (1286 ms)
+9:33:23 AM: web:build: ├   └ /en-US/resources/workhuman-iq-reports/page/2 (1185 ms)
+9:33:23 AM: web:build: ├ ● /resources/workhuman-podcasts                                                         377 B           687 kB
+9:33:23 AM: web:build: ├ ● /resources/workhuman-podcasts/[...slug]                                               2.77 kB         566 kB
+9:33:23 AM: web:build: ├ ● /resources/workhuman-podcasts/page/[pageNumber] (ISR: 10 Seconds) (985 ms)            390 B           687 kB
+9:33:23 AM: web:build: ├   └ /en-US/resources/workhuman-podcasts/page/1 (985 ms)
+9:33:23 AM: web:build: ├ ● /search                                                                               21.7 kB         635 kB
+9:33:23 AM: web:build: ├ ƒ /sitemap_index.xml                                                                    254 B           248 kB
+9:33:23 AM: web:build: ├ ƒ /spotlight-sitemap.xml                                                                258 B           248 kB
+9:33:23 AM: web:build: ├ ● /topics/[[...topic]] (ISR: 10 Seconds) (175437 ms)                                    1.3 kB          631 kB
+9:33:23 AM: web:build: ├   ├ /en-US/topics/hr-leader/page/12 (1811 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/topics/hr-leader/page/14 (1808 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/topics/hr-leader/page/13 (1799 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/topics/hr-leader/page/11 (1797 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/topics/hr-leader/page/10 (1783 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/topics/performance/page/1 (1704 ms)
+9:33:23 AM: web:build: ├   ├ /en-US/topics/performance/page/3 (1693 ms)
+9:33:23 AM: web:build: ├   └ [+230 more paths] (avg 709 ms)
+9:33:23 AM: web:build: ├ ƒ /webinars-sitemap.xml                                                                 257 B           248 kB
+9:33:23 AM: web:build: ├ ○ /whats-new/spring-2024 (361 ms)                                                       1.92 MB        2.49 MB
+9:33:23 AM: web:build: ├   └ css/01e1095cbf5d2c64.css                                                            3.9 kB
+9:33:23 AM: web:build: ├ ○ /whats-new/stay-updated (348 ms)                                                      2.24 kB         308 kB
+9:33:23 AM: web:build: ├ ● /why-workhuman/case-studies                                                           378 B           687 kB
+9:33:23 AM: web:build: ├ ● /why-workhuman/case-studies/[...slug]                                                 5.16 kB         566 kB
+9:33:23 AM: web:build: ├ ● /why-workhuman/case-studies/page/[pageNumber] (1313 ms)                               390 B           687 kB
+9:33:23 AM: web:build: ├   ├ /en-US/why-workhuman/case-studies/page/2 (661 ms)
+9:33:23 AM: web:build: ├   └ /en-US/why-workhuman/case-studies/page/1 (652 ms)
+9:33:23 AM: web:build: ├ ● /why-workhuman/customer-snapshots                                                     382 B           687 kB
+9:33:23 AM: web:build: ├ ● /why-workhuman/customer-snapshots/[...slug]                                           6.15 kB         564 kB
+9:33:23 AM: web:build: └ ● /why-workhuman/customer-snapshots/page/[pageNumber] (750 ms)                          394 B           687 kB
+9:33:23 AM: web:build:     ├ /en-US/why-workhuman/customer-snapshots/page/2 (378 ms)
+9:33:23 AM: web:build:     └ /en-US/why-workhuman/customer-snapshots/page/1 (372 ms)
+9:33:23 AM: web:build: + First Load JS shared by all                                                             345 kB
+9:33:23 AM: web:build:   ├ chunks/framework-fb999dd119b6be4b.js                                                  45.2 kB
+9:33:23 AM: web:build:   ├ chunks/main-57e49aaf013cf35e.js                                                       37.7 kB
+9:33:23 AM: web:build:   ├ chunks/pages/_app-9125bbe54b5e77f6.js                                                 162 kB
+9:33:23 AM: web:build:   ├ css/bf67a29c86a99881.css                                                              98 kB
+9:33:23 AM: web:build:   └ other shared chunks (total)                                                           2.86 kB
+9:33:23 AM: web:build:
+9:33:23 AM: web:build: ○  (Static)   prerendered as static content
+9:33:23 AM: web:build: ●  (SSG)      prerendered as static HTML (uses getStaticProps)
+9:33:23 AM: web:build:    (ISR)      incremental static regeneration (uses revalidate in getStaticProps)
+9:33:23 AM: web:build: ƒ  (Dynamic)  server-rendered on demand
+9:33:23 AM: web:build:
+9:33:23 AM:  Tasks:    1 successful, 1 total
+9:33:23 AM: Cached:    0 cached, 1 total
+9:33:23 AM:   Time:    2m5.034s
+9:33:23 AM: ​
+9:33:23 AM: (build.command completed in 2m 5.8s)
+9:33:23 AM: ​
+9:33:23 AM: @netlify/plugin-nextjs (onBuild event)
+9:33:23 AM: ────────────────────────────────────────────────────────────────
+9:33:23 AM: ​
+9:33:23 AM: ​
+9:33:23 AM: @netlify/plugin-nextjs (onEnd event)
+9:33:23 AM: ────────────────────────────────────────────────────────────────
+9:33:23 AM: ​
+9:33:23 AM: ​
+9:33:23 AM: (@netlify/plugin-nextjs onEnd completed in 5ms)
+9:33:25 AM: ​
+9:33:25 AM: Plugin "@netlify/plugin-nextjs" failed
+9:33:25 AM: ────────────────────────────────────────────────────────────────
+9:33:25 AM: ​
+9:33:25 AM:   Error message
+9:33:25 AM:   Error: Your publish directory was not found at: /opt/build/repo/apps/web/apps/web/.next. Please check your build settings
+9:33:25 AM: ​
+9:33:25 AM:   Plugin details
+9:33:25 AM:   Package:        @netlify/plugin-nextjs
+9:33:25 AM:   Version:        5.2.2
+9:33:25 AM:   Repository:     git+https://github.com/netlify/next-runtime-minimal.git
+9:33:25 AM:   npm link:       https://www.npmjs.com/package/@netlify/plugin-nextjs
+9:33:25 AM:   Report issues:  https://github.com/netlify/next-runtime-minimal/issues
+9:33:25 AM: ​
+9:33:25 AM:   Error location
+9:33:25 AM:   In "onBuild" event in "@netlify/plugin-nextjs" from netlify.toml
+9:33:25 AM: ​
+9:33:25 AM:   Resolved config
+9:33:25 AM:   build:
+9:33:25 AM:     base: /opt/build/repo/apps/web
+9:33:25 AM:     command: npx turbo run build --filter='web'
+9:33:25 AM:     commandOrigin: config
+9:33:25 AM:     edge_functions: /opt/build/repo/apps/web/netlify/edge-functions
+9:33:25 AM:     environment:
+9:33:25 AM:       - ALGOLIA_ADMIN_KEY
+9:33:25 AM:       - ALGOLIA_API_KEY
+9:33:25 AM:       - CF_CMA_TOKEN
+9:33:25 AM:       - CF_DELIVERY_ACCESS_TOKEN
+9:33:25 AM:       - CF_ENVIRONMENT
+9:33:25 AM:       - CF_PREVIEW_ACCESS_TOKEN
+9:33:25 AM:       - CF_SPACE_ID
+9:33:25 AM:       - CONTENTFUL_DELIVERY_TOKEN
+9:33:25 AM:       - CONTENTFUL_PREVIEW_SECRET
+9:33:25 AM:       - CONTENTFUL_PREVIEW_TOKEN
+9:33:25 AM:       - CONTENTFUL_SPACE_ID
+9:33:25 AM:       - FONTAWESOME_NPM_AUTH_TOKEN
+9:33:25 AM:       - INDEXABLE_CONTENT_TYPES
+9:33:25 AM:       - ISR
+9:33:25 AM:       - NEXT_FORCE_EDGE_IMAGES
+9:33:25 AM:       - NEXT_PUBLIC_ALGOLIA_APP_ID
+9:33:25 AM:       - NEXT_PUBLIC_ALGOLIA_INDEX
+9:33:25 AM:       - NEXT_PUBLIC_ALGOLIA_SEARCH_KEY
+9:33:25 AM:       - NEXT_PUBLIC_GTM_ID
+9:33:25 AM:       - NEXT_PUBLIC_MARKETO_CONVERSION_FIELD_NAME
+9:33:25 AM:       - NEXT_PUBLIC_MARKETO_CONVERSION_FORM_ID
+9:33:25 AM:       - NEXT_PUBLIC_MARKETO_MUNCHKIN_ID
+9:33:25 AM:       - NEXT_PUBLIC_ROOT_URL
+9:33:25 AM:       - REVIEW_ID
+9:33:25 AM:       - STORYBOOK_ALGOLIA_APP_ID
+9:33:25 AM:       - STORYBOOK_ALGOLIA_INDEX
+9:33:25 AM:       - STORYBOOK_ALGOLIA_SEARCH_KEY
+9:33:25 AM:     ignore: npx turbo-ignore
+9:33:25 AM:     publish: /opt/build/repo/apps/web/apps/web/.next
+9:33:25 AM:     publishOrigin: config
+9:33:25 AM:   functions:
+9:33:25 AM:     '*':
+9:33:25 AM:       included_files:
+9:33:25 AM:         - '!../../node_modules/sharp/vendor/*'
+9:33:25 AM:         - '!../../node_modules/@esbuild/*'
+9:33:25 AM:         - '!../../node_modules/@esbuild/*'
+9:33:25 AM:         - '!../../node_modules/@swc/core-linux-x64-musl/*'
+9:33:25 AM:         - '!../../node_modules/@swc/core-linux-x64-gnu/*'
+9:33:25 AM:         - '!../../node_modules/@swc/core-darwin-x64/*'
+9:33:25 AM:         - '!../../node_modules/sharp/vendor/8.14.5/linux-x64/lib/libvips-cpp.so.42'
+9:33:25 AM:         - '!../../node_modules/@esbuild/linux-x64/bin/esbuild'
+9:33:25 AM:         - '!../../node_modules/esbuild/lib/downloaded-@esbuild-linux-x64-esbuild'
+9:33:25 AM:         - '!../../node_modules/esbuild/lib/downloaded-@esbuild-linux-x64-esbuild'
+9:33:25 AM:         - '!../../node_modules/@fortawesome/pro-regular-svg-icons/index.js'
+9:33:25 AM:         - '!../../node_modules/@fortawesome/pro-solid-svg-icons/index.js'
+9:33:25 AM:   functionsDirectory: /opt/build/repo/apps/web/netlify/functions
+9:33:25 AM:   plugins:
+9:33:25 AM:     - inputs: {}
+9:33:25 AM:       origin: config
+9:33:25 AM:       package: '@netlify/plugin-nextjs'
+9:33:25 AM:     - inputs: {}
+9:33:25 AM:       origin: ui
+9:33:25 AM:       package: '@netlify/plugin-contentful-buildtime'
+9:33:25 AM:     - inputs: {}
+9:33:25 AM:       origin: ui
+9:33:25 AM:       package: '@netlify/plugin-lighthouse'
+9:33:25 AM:   redirects:
+9:33:25 AM:     - force: true
+9:33:25 AM:       from: /munchkin.js
+9:33:25 AM:       status: 200
+9:33:25 AM:       to: https://862-jiq-698.mktoweb.com/munchkin.js
+9:33:25 AM:     - force: true
+9:33:25 AM:       from: /uc.js
+9:33:25 AM:       status: 200
+9:33:25 AM:       to: https://consent.cookiebot.com/uc.js
+9:33:25 AM:     - force: true
+9:33:25 AM:       from: /heap.js
+9:33:25 AM:       status: 200
+9:33:25 AM:       to: https://cdn.heapanalytics.com/js/heap-4050918174.js
+9:33:25 AM:     - force: true
+9:33:25 AM:       from: /uwt.js
+9:33:25 AM:       status: 200
+9:33:25 AM:       to: https://static.ads-twitter.com/uwt.js
+9:33:25 AM:   redirectsOrigin: config
+9:33:25 AM: Build failed due to a user error: Build script returned non-zero exit code: 2
+9:33:25 AM: Failing build: Failed to build site
+9:33:25 AM: Finished processing build request in 2m58.423s
+9:33:25 AM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)

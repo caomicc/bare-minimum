@@ -1,0 +1,85 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "outputs": [
+        "dist/**",
+        ".next/**",
+        "storybook-static/**",
+        "./.next/**",
+        "!./.next/cache/**"
+      ],
+      "env": [
+        "CF_SPACE_ID",
+        "CF_DELIVERY_ACCESS_TOKEN",
+        "CF_PREVIEW_ACCESS_TOKEN",
+        "CF_CMA_TOKEN",
+        "CF_ENVIRONMENT",
+        "ISR",
+        "NEXT_PUBLIC_ROOT_URL",
+        "NEXT_PUBLIC_GTM_ID",
+        "NEXT_PUBLIC_MARKETO_MUNCHKIN_ID",
+        "NEXT_PUBLIC_MARKETO_CONVERSION_FORM_ID",
+        "NEXT_PUBLIC_MARKETO_CONVERSION_FIELD_NAME",
+        "NEXT_PUBLIC_ALGOLIA_APP_ID",
+        "NEXT_PUBLIC_ALGOLIA_SEARCH_KEY",
+        "NEXT_PUBLIC_ALGOLIA_INDEX",
+        "ALGOLIA_API_KEY",
+        "ALGOLIA_ADMIN_KEY",
+        "INDEXABLE_CONTENT_TYPES",
+        "NODE_ENV",
+        "NEXTJS_DEBUG_I18N",
+        "FONTAWESOME_NPM_AUTH_TOKEN",
+        "BRANCH"
+      ]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "cypress:open": {
+      "dependsOn": ["^dev"],
+      "outputs": []
+    },
+    "cypress:run": {
+      "dependsOn": ["^dev"],
+      "outputs": []
+    },
+    "lint": {
+      "outputs": []
+    },
+    "lint-fix": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    },
+    "start": {
+      "cache": false
+    },
+    "storybook": {
+      "cache": false
+    }
+  },
+  "globalEnv": [
+    "CF_SPACE_ID",
+    "CF_DELIVERY_ACCESS_TOKEN",
+    "CF_PREVIEW_ACCESS_TOKEN",
+    "CF_CMA_TOKEN",
+    "CF_ENVIRONMENT",
+    "NEXT_PUBLIC_GTM_ID",
+    "NEXT_PUBLIC_MARKETO_MUNCHKIN_ID",
+    "NEXT_PUBLIC_MARKETO_CONVERSION_FORM_ID",
+    "NEXT_PUBLIC_MARKETO_CONVERSION_FIELD_NAME",
+    "NEXT_PUBLIC_ALGOLIA_APP_ID",
+    "NEXT_PUBLIC_ALGOLIA_SEARCH_KEY",
+    "NEXT_PUBLIC_ALGOLIA_INDEX",
+    "ALGOLIA_API_KEY",
+    "INDEXABLE_CONTENT_TYPES",
+    "CONTENTFUL_PREVIEW_SECRET",
+    "BRANCH"
+  ],
+  "globalDependencies": [".env"]
+}

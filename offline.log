@@ -1,0 +1,749 @@
+➜  magma git:(caomicc/next-14-again) ✗ npx netlify build --filter="web" --offline
+​
+Netlify Build
+────────────────────────────────────────────────────────────────
+​
+❯ Version
+  @netlify/build 29.41.2
+​
+❯ Flags
+  dry: false
+  offline: true
+  packagePath: apps/web
+​
+❯ Current directory
+  /Users/cameron.omiccioli/git/magma
+​
+❯ Config file
+  /Users/cameron.omiccioli/git/magma/apps/web/netlify.toml
+​
+❯ Context
+  production
+​
+❯ Using Next.js Runtime - v4.41.3
+​
+@netlify/plugin-nextjs (onPreBuild event)
+────────────────────────────────────────────────────────────────
+​
+No Next.js cache to restore.
+​
+(@netlify/plugin-nextjs onPreBuild completed in 39ms)
+​
+build.command from netlify.toml
+────────────────────────────────────────────────────────────────
+​
+$ npx turbo run build --filter='web'
+• Packages in scope: web
+• Running build in 1 packages
+• Remote caching disabled
+web:build: cache bypass, force executing 618c22b0d8dafece
+web:build: npm WARN ignoring workspace config at /Users/cameron.omiccioli/git/magma/apps/web/.npmrc
+web:build:
+web:build: > web@0.1.0 build
+web:build: > next build
+web:build:
+web:build:  ⚠ Invalid next.config.js options detected:
+web:build:  ⚠     Unrecognized key(s) in object: 'api'
+web:build:  ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+web:build:   ▲ Next.js 14.2.3
+web:build:   - Environments: .env
+web:build:   - Experiments (use with caution):
+web:build:     · scrollRestoration
+web:build:     · forceSwcTransforms
+web:build:
+
+web:build: ./netlify/functions/deploy-succeeded-background.ts
+web:build: 14:3  Warning: Unexpected console statement.  no-console
+web:build: 15:3  Warning: Unexpected console statement.  no-console
+web:build: 19:7  Warning: Unexpected console statement.  no-console
+web:build: 22:7  Warning: Unexpected console statement.  no-console
+web:build:
+web:build: ./netlify/functions/life-at-workhuman-rss.ts
+web:build: 54:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build: 106:7  Warning: Unexpected console statement.  no-console
+web:build: 115:31  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build: 164:24  Warning: Unexpected unnamed async function.  func-names
+web:build: 164:51  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build:
+web:build: ./netlify/functions/rss.ts
+web:build: 58:36  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build: 110:7  Warning: Unexpected console statement.  no-console
+web:build: 119:31  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build: 167:24  Warning: Unexpected unnamed async function.  func-names
+web:build: 167:51  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build:
+web:build: ./pages/_app.tsx
+web:build: 24:31  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build:
+web:build: ./pages/_document.tsx
+web:build: 31:11  Warning: Prefer `next/script` component when using the inline script for Google Analytics. See: https://nextjs.org/docs/messages/next-script-for-ga  @next/next/next-script-for-ga
+web:build: 53:15  Warning: Unexpected console statement.  no-console
+web:build:
+web:build: ./pages/api/algolia-on-demand-background.ts
+web:build: 28:1  Warning: Assign arrow function to a variable before exporting as module default  import/no-anonymous-default-export
+web:build:
+web:build: ./pages/company/leadership/[slug]/index.tsx
+web:build: 104:61  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build: 125:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build:
+web:build: ./pages/demo.tsx
+web:build: 33:7  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build:
+web:build: ./pages/events/webinars/[slug].tsx
+web:build: 17:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build:
+web:build: ./pages/whats-new/spring-2024.tsx
+web:build: 16:1  Warning: 'react-player' should be listed in the project's dependencies. Run 'npm i -S react-player' to add it  import/no-extraneous-dependencies
+web:build:
+web:build: ./templates/AuthorPosts.tsx
+web:build: 40:61  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build: 55:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build:
+web:build: ./templates/ListingPages.tsx
+web:build: 36:1  Warning: 'swiper' should be listed in the project's dependencies. Run 'npm i -S swiper' to add it  import/no-extraneous-dependencies
+web:build:
+web:build: ./templates/Webinar.tsx
+web:build: 40:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+web:build:
+web:build: info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+web:build:  ✓ Linting and checking validity of types
+web:build:    Creating an optimized production build ...
+web:build:  ✓ Compiled successfully
+web:build:  ✓ Collecting page data
+   Generating static pages (87/608)  [==  ]Warning: data for page "/[...slug]" (path "/about-us/") is 226 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/[...slug]" (path "/platform/conversations/") is 238 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/[...slug]" (path "/platform/service-milestones/") is 360 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+   Generating static pages (103/608)  [    ]Warning: data for page "/[...slug]" (path "/capabilities/workhuman-iq/") is 366 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+   Generating static pages (107/608)  [=   ]Warning: data for page "/[...slug]" (path "/company/careers/technology/") is 166 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/[...slug]" (path "/capabilities/integrations/") is 712 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/[...slug]" (path "/company/careers/") is 385 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/[...slug]" (path "/capabilities/inclusion-advisor/") is 473 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/[...slug]" (path "/capabilities/rewards/") is 904 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+   Generating static pages (142/608)  [ ===]Warning: data for page "/[...slug]" (path "/about-us/") is 208 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+   Generating static pages (250/608)  [=   ]Warning: data for page "/campaign/[...slug]" (path "/campaign/social-recognition/") is 705 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+   Generating static pages (260/608)  [    ]Warning: data for page "/campaign/[...slug]" (path "/campaign/social-recognition/") is 710 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+   Generating static pages (518/608)  [====]Warning: data for page "/demo" (path "/demo/") is 237 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/events/spotlight/the-future-proof-workforce" (path "/events/spotlight/the-future-proof-workforce/") is 867 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/events/spotlight/the-future-proof-workforce" (path "/events/spotlight/the-future-proof-workforce/") is 869 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/events/spotlight/the-future-proof-workforce" (path "/events/spotlight/the-future-proof-workforce/") is 868 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+   Generating static pages (536/608)  [=== ]Warning: data for page "/" is 149 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/" is 159 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+web:build: Warning: data for page "/" is 156 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+web:build: See more info here: https://nextjs.org/docs/messages/large-page-data
+ ✓ Generating static pages (608/608)
+web:build:  ✓ Collecting build traces
+web:build:  ✓ Finalizing page optimization
+web:build:
+web:build: Route (pages)                                                                    Size     First Load JS
+web:build: ┌ ● /                                                                            7.96 kB         623 kB
+web:build: ├   /_app                                                                        0 B             250 kB
+web:build: ├ ● /[...slug] (ISR: 10 Seconds) (16843 ms)                                      352 B           622 kB
+web:build: ├   ├ /en-US/about-us
+web:build: ├   ├ /en-US/terms-of-use
+web:build: ├   ├ /en-US/privacy-policy
+web:build: ├   └ [+138 more paths]
+web:build: ├ ○ /404                                                                         922 B           553 kB
+web:build: ├ ƒ /api/algolia-on-demand-background                                            0 B             250 kB
+web:build: ├ ƒ /api/disable-draft                                                           0 B             250 kB
+web:build: ├ ƒ /api/draft                                                                   0 B             250 kB
+web:build: ├ ƒ /api/revalidate                                                              0 B             250 kB
+web:build: ├ ƒ /authors-sitemap.xml                                                         254 B           250 kB
+web:build: ├ ● /authors/[...slug]                                                           1.28 kB         562 kB
+web:build: ├ ● /blog                                                                        359 B           689 kB
+web:build: ├ ƒ /blog-sitemap.xml                                                            255 B           250 kB
+web:build: ├ ● /blog/[...slug]                                                              380 B           569 kB
+web:build: ├ ● /blog/page/[pageNumber] (11690 ms)                                           372 B           689 kB
+web:build: ├   ├ /en-US/blog/page/9 (370 ms)
+web:build: ├   ├ /en-US/blog/page/13 (350 ms)
+web:build: ├   ├ /en-US/blog/page/8 (313 ms)
+web:build: ├   ├ /en-US/blog/page/12 (307 ms)
+web:build: ├   ├ /en-US/blog/page/1
+web:build: ├   ├ /en-US/blog/page/2
+web:build: ├   ├ /en-US/blog/page/3
+web:build: ├   └ [+50 more paths]
+web:build: ├ ● /campaign/[...slug] (ISR: 10 Seconds) (443 ms)                               2.66 kB         621 kB
+web:build: ├   ├ /en-US/campaign/social-recognition
+web:build: ├   ├ /de/campaign/social-recognition
+web:build: ├   └ /fr/campaign/social-recognition
+web:build: ├ ƒ /casestudies-sitemap.xml                                                     259 B           250 kB
+web:build: ├ ● /company/careers/life-at-workhuman                                           382 B           689 kB
+web:build: ├ ● /company/careers/life-at-workhuman/[...slug]                                 415 B           569 kB
+web:build: ├ ● /company/careers/life-at-workhuman/page/[pageNumber] (1561 ms)               395 B           689 kB
+web:build: ├   ├ /en-US/company/careers/life-at-workhuman/page/1
+web:build: ├   ├ /en-US/company/careers/life-at-workhuman/page/2
+web:build: ├   ├ /en-US/company/careers/life-at-workhuman/page/3
+web:build: ├   └ [+4 more paths]
+web:build: ├ ● /company/leadership                                                          3.04 kB         558 kB
+web:build: ├ ● /company/leadership/[slug]                                                   4.79 kB         560 kB
+web:build: ├ ● /company/testimonial-videos                                                  392 B           689 kB
+web:build: ├ ● /cookie-policy                                                               3.26 kB         622 kB
+web:build: ├ ● /demo                                                                        2.55 kB         621 kB
+web:build: ├ ● /events                                                                      4.19 kB         623 kB
+web:build: ├ ● /events/become-a-speaker                                                     4.13 kB         622 kB
+web:build: ├ ● /events/spotlight                                                            368 B           689 kB
+web:build: ├ ● /events/spotlight/[series]/[slug]                                            2.69 kB         621 kB
+web:build: ├ ● /events/spotlight/[series]/[slug]/broadcast                                  1.34 kB         620 kB
+web:build: ├ ● /events/spotlight/[series]/[slug]/replay                                     1.56 kB         620 kB
+web:build: ├ ● /events/spotlight/[series]/[slug]/thank-you                                  518 B           616 kB
+web:build: ├ ● /events/spotlight/[series]/[slug]/thank-you-non                              522 B           616 kB
+web:build: ├ ● /events/spotlight/page/[pageNumber] (ISR: 10 Seconds)                        378 B           689 kB
+web:build: ├   └ /en-US/events/spotlight/page/1
+web:build: ├ ● /events/spotlight/the-future-proof-workforce                                 398 B           622 kB
+web:build: ├ ● /events/spotlight/the-future-proof-workforce/thank-you                       406 B           622 kB
+web:build: ├ ● /events/spotlight/the-future-proof-workforce/thank-you-non                   409 B           622 kB
+web:build: ├ ● /events/webinars                                                             387 B           689 kB
+web:build: ├ ● /events/webinars/[slug]                                                      3.32 kB         569 kB
+web:build: ├ ● /events/webinars/page/[pageNumber] (1128 ms)                                 380 B           689 kB
+web:build: ├   ├ /en-US/events/webinars/page/1
+web:build: ├   ├ /en-US/events/webinars/page/2
+web:build: ├   ├ /en-US/events/webinars/page/3
+web:build: ├   └ [+2 more paths]
+web:build: ├ ○ /gender-pay-gap-report/dublin-2022                                           5.38 kB         631 kB
+web:build: ├ ○ /gender-pay-gap-report/dublin-2023                                           5.44 kB         631 kB
+web:build: ├ ƒ /pages-sitemap.xml                                                           255 B           250 kB
+web:build: ├ ƒ /podcasts-sitemap.xml                                                        256 B           250 kB
+web:build: ├ ● /resources                                                                   361 B           689 kB
+web:build: ├ ● /resources/gallup                                                            368 B           689 kB
+web:build: ├ ● /resources/gallup/page/[pageNumber] (662 ms)                                 381 B           689 kB
+web:build: ├   ├ /en-US/resources/gallup/page/1
+web:build: ├   ├ /en-US/resources/gallup/page/2
+web:build: ├   └ /en-US/resources/gallup/page/3
+web:build: ├ ● /resources/human-workplace-index                                             380 B           689 kB
+web:build: ├ ● /resources/human-workplace-index/global                                      387 B           689 kB
+web:build: ├ ● /resources/human-workplace-index/global/page/[pageNumber] (ISR: 10 Seconds)  399 B           689 kB
+web:build: ├   └ /en-US/resources/human-workplace-index/global/page/1
+web:build: ├ ● /resources/human-workplace-index/ire                                         384 B           689 kB
+web:build: ├ ● /resources/human-workplace-index/ire/page/[pageNumber] (ISR: 10 Seconds)     396 B           689 kB
+web:build: ├   └ /en-US/resources/human-workplace-index/ire/page/1
+web:build: ├ ● /resources/human-workplace-index/uk                                          384 B           689 kB
+web:build: ├ ● /resources/human-workplace-index/uk/page/[pageNumber] (ISR: 10 Seconds)      395 B           689 kB
+web:build: ├   └ /en-US/resources/human-workplace-index/uk/page/1
+web:build: ├ ● /resources/human-workplace-index/usa                                         384 B           689 kB
+web:build: ├ ● /resources/human-workplace-index/usa/page/[pageNumber] (593 ms)              395 B           689 kB
+web:build: ├   ├ /en-US/resources/human-workplace-index/usa/page/1
+web:build: ├   ├ /en-US/resources/human-workplace-index/usa/page/2
+web:build: ├   └ /en-US/resources/human-workplace-index/usa/page/3
+web:build: ├ ● /resources/product-briefs                                                    375 B           689 kB
+web:build: ├ ● /resources/product-briefs/page/[pageNumber] (ISR: 10 Seconds)                388 B           689 kB
+web:build: ├   └ /en-US/resources/product-briefs/page/1
+web:build: ├ ● /resources/reports-guides                                                    374 B           689 kB
+web:build: ├ ● /resources/reports-guides/[...slug]                                          4.52 kB         570 kB
+web:build: ├ ● /resources/reports-guides/page/[pageNumber] (14186 ms)                       386 B           689 kB
+web:build: ├   ├ /en-US/resources/reports-guides/page/2 (626 ms)
+web:build: ├   ├ /en-US/resources/reports-guides/page/3 (621 ms)
+web:build: ├   ├ /en-US/resources/reports-guides/page/1 (619 ms)
+web:build: ├   ├ /en-US/resources/reports-guides/page/7 (616 ms)
+web:build: ├   ├ /en-US/resources/reports-guides/page/12 (604 ms)
+web:build: ├   ├ /en-US/resources/reports-guides/page/10 (594 ms)
+web:build: ├   ├ /en-US/resources/reports-guides/page/8 (591 ms)
+web:build: ├   └ [+18 more paths] (avg 551 ms)
+web:build: ├ ● /resources/research                                                          367 B           689 kB
+web:build: ├ ● /resources/thought-leadership                                                378 B           689 kB
+web:build: ├ ● /resources/thought-leadership/page/[pageNumber] (ISR: 10 Seconds)            391 B           689 kB
+web:build: ├   └ /en-US/resources/thought-leadership/page/1
+web:build: ├ ● /resources/workhuman-iq-reports                                              380 B           689 kB
+web:build: ├ ● /resources/workhuman-iq-reports/page/[pageNumber] (441 ms)                   392 B           689 kB
+web:build: ├   ├ /en-US/resources/workhuman-iq-reports/page/1
+web:build: ├   └ /en-US/resources/workhuman-iq-reports/page/2
+web:build: ├ ● /resources/workhuman-podcasts                                                377 B           689 kB
+web:build: ├ ● /resources/workhuman-podcasts/[...slug]                                      2.77 kB         569 kB
+web:build: ├ ● /resources/workhuman-podcasts/page/[pageNumber] (ISR: 10 Seconds)            390 B           689 kB
+web:build: ├   └ /en-US/resources/workhuman-podcasts/page/1
+web:build: ├ ● /search                                                                      21.7 kB         637 kB
+web:build: ├ ƒ /sitemap_index.xml                                                           254 B           250 kB
+web:build: ├ ƒ /spotlight-sitemap.xml                                                       258 B           250 kB
+web:build: ├ ● /topics/[[...topic]] (ISR: 10 Seconds) (50544 ms)                            1.3 kB          634 kB
+web:build: ├   ├ /en-US/topics/recognition/page/5 (628 ms)
+web:build: ├   ├ /en-US/topics/hr-leader/page/14 (578 ms)
+web:build: ├   ├ /en-US/topics/hr-leader/page/9 (451 ms)
+web:build: ├   ├ /en-US/topics/hr-leader/page/8 (413 ms)
+web:build: ├   ├ /en-US/topics/recognition/page/4 (409 ms)
+web:build: ├   ├ /en-US/topics/hr-leader/page/1 (394 ms)
+web:build: ├   ├ /en-US/topics/wellbeing (392 ms)
+web:build: ├   └ [+230 more paths]
+web:build: ├ ƒ /webinars-sitemap.xml                                                        257 B           250 kB
+web:build: ├ ○ /whats-new/spring-2024                                                       1.92 MB        2.49 MB
+web:build: ├   └ css/01e1095cbf5d2c64.css                                                   3.9 kB
+web:build: ├ ○ /whats-new/stay-updated                                                      2.24 kB         311 kB
+web:build: ├ ● /why-workhuman/case-studies                                                  378 B           689 kB
+web:build: ├ ● /why-workhuman/case-studies/[...slug]                                        5.16 kB         568 kB
+web:build: ├ ● /why-workhuman/case-studies/page/[pageNumber] (448 ms)                       390 B           689 kB
+web:build: ├   ├ /en-US/why-workhuman/case-studies/page/1
+web:build: ├   └ /en-US/why-workhuman/case-studies/page/2
+web:build: ├ ● /why-workhuman/customer-snapshots                                            382 B           689 kB
+web:build: ├ ● /why-workhuman/customer-snapshots/[...slug]                                  6.15 kB         567 kB
+web:build: └ ● /why-workhuman/customer-snapshots/page/[pageNumber] (352 ms)                 394 B           689 kB
+web:build:     ├ /en-US/why-workhuman/customer-snapshots/page/1
+web:build:     └ /en-US/why-workhuman/customer-snapshots/page/2
+web:build: + First Load JS shared by all                                                    348 kB
+web:build:   ├ chunks/framework-fb999dd119b6be4b.js                                         45.2 kB
+web:build:   ├ chunks/main-57e49aaf013cf35e.js                                              37.7 kB
+web:build:   ├ chunks/pages/_app-7cdcb62d85cb3573.js                                        164 kB
+web:build:   ├ css/bf67a29c86a99881.css                                                     98 kB
+web:build:   └ other shared chunks (total)                                                  2.86 kB
+web:build:
+web:build: ○  (Static)   prerendered as static content
+web:build: ●  (SSG)      prerendered as static HTML (uses getStaticProps)
+web:build:    (ISR)      incremental static regeneration (uses revalidate in getStaticProps)
+web:build: ƒ  (Dynamic)  server-rendered on demand
+web:build:
+web:build:
+
+ Tasks:    1 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    39.934s
+
+​
+(build.command completed in 40.6s)
+​
+@netlify/plugin-nextjs (onBuild event)
+────────────────────────────────────────────────────────────────
+​
+Moving static page files to serve from CDN...
+Moved 438 files to CDN
+The following routes use "revalidate" values of under 60 seconds, which is not supported.
+They will use a revalidate time of 60 seconds instead.
+┌─────────┬──────────────────────────────────────────────────────────────────────┬────────────┐
+│ (index) │ Route                                                                │ Revalidate │
+├─────────┼──────────────────────────────────────────────────────────────────────┼────────────┤
+│ 0       │ '/en-US/company/careers/life-at-workhuman'                           │ 10         │
+│ 1       │ '/de/company/careers/life-at-workhuman'                              │ 10         │
+│ 2       │ '/fr/company/careers/life-at-workhuman'                              │ 10         │
+│ 3       │ '/en-US/company/leadership'                                          │ 10         │
+│ 4       │ '/de/company/leadership'                                             │ 10         │
+│ 5       │ '/fr/company/leadership'                                             │ 10         │
+│ 6       │ '/en-US/demo'                                                        │ 10         │
+│ 7       │ '/de/demo'                                                           │ 10         │
+│ 8       │ '/fr/demo'                                                           │ 10         │
+│ 9       │ '/en-US/events/spotlight/the-future-proof-workforce'                 │ 10         │
+│ 10      │ '/de/events/spotlight/the-future-proof-workforce'                    │ 10         │
+│ 11      │ '/fr/events/spotlight/the-future-proof-workforce'                    │ 10         │
+│ 12      │ '/en-US/events/spotlight'                                            │ 10         │
+│ 13      │ '/de/events/spotlight'                                               │ 10         │
+│ 14      │ '/fr/events/spotlight'                                               │ 10         │
+│ 15      │ '/en-US/events/spotlight/the-future-proof-workforce/thank-you'       │ 10         │
+│ 16      │ '/de/events/spotlight/the-future-proof-workforce/thank-you'          │ 10         │
+│ 17      │ '/fr/events/spotlight/the-future-proof-workforce/thank-you'          │ 10         │
+│ 18      │ '/en-US/blog/page/1'                                                 │ 10         │
+│ 19      │ '/en-US/events/webinars'                                             │ 10         │
+│ 20      │ '/de/events/webinars'                                                │ 10         │
+│ 21      │ '/fr/events/webinars'                                                │ 10         │
+│ 22      │ '/en-US/resources/gallup'                                            │ 10         │
+│ 23      │ '/de/resources/gallup'                                               │ 10         │
+│ 24      │ '/fr/resources/gallup'                                               │ 10         │
+│ 25      │ '/en-US/resources/human-workplace-index'                             │ 10         │
+│ 26      │ '/de/resources/human-workplace-index'                                │ 10         │
+│ 27      │ '/fr/resources/human-workplace-index'                                │ 10         │
+│ 28      │ '/en-US/resources/gallup/page/1'                                     │ 10         │
+│ 29      │ '/en-US/events/spotlight/page/1'                                     │ 10         │
+│ 30      │ '/en-US/events/spotlight/the-future-proof-workforce/thank-you-non'   │ 10         │
+│ 31      │ '/de/events/spotlight/the-future-proof-workforce/thank-you-non'      │ 10         │
+│ 32      │ '/fr/events/spotlight/the-future-proof-workforce/thank-you-non'      │ 10         │
+│ 33      │ '/en-US/resources/human-workplace-index/global'                      │ 10         │
+│ 34      │ '/de/resources/human-workplace-index/global'                         │ 10         │
+│ 35      │ '/fr/resources/human-workplace-index/global'                         │ 10         │
+│ 36      │ '/en-US/resources/human-workplace-index/ire'                         │ 10         │
+│ 37      │ '/de/resources/human-workplace-index/ire'                            │ 10         │
+│ 38      │ '/fr/resources/human-workplace-index/ire'                            │ 10         │
+│ 39      │ '/en-US/resources/human-workplace-index/uk'                          │ 10         │
+│ 40      │ '/de/resources/human-workplace-index/uk'                             │ 10         │
+│ 41      │ '/fr/resources/human-workplace-index/uk'                             │ 10         │
+│ 42      │ '/en-US/cookie-policy'                                               │ 10         │
+│ 43      │ '/de/cookie-policy'                                                  │ 10         │
+│ 44      │ '/fr/cookie-policy'                                                  │ 10         │
+│ 45      │ '/en-US/company/testimonial-videos'                                  │ 10         │
+│ 46      │ '/de/company/testimonial-videos'                                     │ 10         │
+│ 47      │ '/fr/company/testimonial-videos'                                     │ 10         │
+│ 48      │ '/en-US/resources/human-workplace-index/usa'                         │ 10         │
+│ 49      │ '/de/resources/human-workplace-index/usa'                            │ 10         │
+│ 50      │ '/fr/resources/human-workplace-index/usa'                            │ 10         │
+│ 51      │ '/en-US/resources'                                                   │ 10         │
+│ 52      │ '/de/resources'                                                      │ 10         │
+│ 53      │ '/fr/resources'                                                      │ 10         │
+│ 54      │ '/en-US/resources/product-briefs'                                    │ 10         │
+│ 55      │ '/de/resources/product-briefs'                                       │ 10         │
+│ 56      │ '/fr/resources/product-briefs'                                       │ 10         │
+│ 57      │ '/en-US/blog'                                                        │ 10         │
+│ 58      │ '/de/blog'                                                           │ 10         │
+│ 59      │ '/fr/blog'                                                           │ 10         │
+│ 60      │ '/en-US/resources/human-workplace-index/global/page/1'               │ 10         │
+│ 61      │ '/en-US/resources/human-workplace-index/uk/page/1'                   │ 10         │
+│ 62      │ '/en-US/resources/workhuman-iq-reports/page/1'                       │ 10         │
+│ 63      │ '/en-US/resources/workhuman-iq-reports'                              │ 10         │
+│ 64      │ '/de/resources/workhuman-iq-reports'                                 │ 10         │
+│ 65      │ '/fr/resources/workhuman-iq-reports'                                 │ 10         │
+│ 66      │ '/en-US/resources/workhuman-podcasts'                                │ 10         │
+│ 67      │ '/de/resources/workhuman-podcasts'                                   │ 10         │
+│ 68      │ '/fr/resources/workhuman-podcasts'                                   │ 10         │
+│ 69      │ '/en-US/resources/reports-guides/page/1'                             │ 10         │
+│ 70      │ '/en-US/resources/research'                                          │ 10         │
+│ 71      │ '/de/resources/research'                                             │ 10         │
+│ 72      │ '/fr/resources/research'                                             │ 10         │
+│ 73      │ '/en-US/about-us'                                                    │ 10         │
+│ 74      │ '/en-US/terms-of-use'                                                │ 10         │
+│ 75      │ '/en-US/privacy-policy'                                              │ 10         │
+│ 76      │ '/en-US/platform/social-recognition'                                 │ 10         │
+│ 77      │ '/en-US/platform/conversations'                                      │ 10         │
+│ 78      │ '/en-US/platform/service-milestones'                                 │ 10         │
+│ 79      │ '/en-US/capabilities/team-awards'                                    │ 10         │
+│ 80      │ '/en-US/platform/life-events'                                        │ 10         │
+│ 81      │ '/en-US/capabilities/workhuman-iq'                                   │ 10         │
+│ 82      │ '/en-US/contact-us'                                                  │ 10         │
+│ 83      │ '/en-US/company/social-responsibility'                               │ 10         │
+│ 84      │ '/en-US/why-workhuman'                                               │ 10         │
+│ 85      │ '/en-US/capabilities/inclusion-advisor'                              │ 10         │
+│ 86      │ '/en-US/capabilities/rewards'                                        │ 10         │
+│ 87      │ '/en-US/capabilities/integrations'                                   │ 10         │
+│ 88      │ '/en-US/company/careers'                                             │ 10         │
+│ 89      │ '/en-US/company/careers/technology'                                  │ 10         │
+│ 90      │ '/en-US/company/careers/human-experience-hx'                         │ 10         │
+│ 91      │ '/en-US/company/careers/strategy-consulting-research'                │ 10         │
+│ 92      │ '/en-US/company/careers/finance-legal'                               │ 10         │
+│ 93      │ '/en-US/company/careers/marketing'                                   │ 10         │
+│ 94      │ '/en-US/company/careers/operations'                                  │ 10         │
+│ 95      │ '/en-US/company/careers/e-commerce'                                  │ 10         │
+│ 96      │ '/en-US/company/careers/sales'                                       │ 10         │
+│ 97      │ '/en-US/company/careers/customer-strategy'                           │ 10         │
+│ 98      │ '/en-US/platform/community-celebrations'                             │ 10         │
+│ 99      │ '/en-US/platform/consulting-practice'                                │ 10         │
+│ 100     │ '/en-US/platform'                                                    │ 10         │
+│ 101     │ '/en-US/why-workhuman/security-and-privacy'                          │ 10         │
+│ 102     │ '/en-US/thank-you'                                                   │ 10         │
+│ 103     │ '/en-US/product-documentation-experiences-redemption-early-adoption' │ 10         │
+│ 104     │ '/en-US/product-updates'                                             │ 10         │
+│ 105     │ '/en-US/company/our-story'                                           │ 10         │
+│ 106     │ '/en-US/thank-you-demo'                                              │ 10         │
+│ 107     │ '/en-US/safe-harbor'                                                 │ 10         │
+│ 108     │ '/en-US/smb-product-documentation'                                   │ 10         │
+│ 109     │ '/en-US/conv_product_documentation'                                  │ 10         │
+│ 110     │ '/en-US/corp_product_documentation'                                  │ 10         │
+│ 111     │ '/en-US/ent_product_documentation'                                   │ 10         │
+│ 112     │ '/en-US/workhuman-partner-policies'                                  │ 10         │
+│ 113     │ '/en-US/pricing-advantage'                                           │ 10         │
+│ 114     │ '/en-US/accessibility-statement'                                     │ 10         │
+│ 115     │ '/en-US/abm-template-example'                                        │ 10         │
+│ 116     │ '/en-US/impressum'                                                   │ 10         │
+│ 117     │ '/en-US/events/workhuman-live'                                       │ 10         │
+│ 118     │ '/en-US/company/our-customers'                                       │ 10         │
+│ 119     │ '/en-US/a-test-page-that-is-not-indexed'                             │ 10         │
+│ 120     │ '/de/about-us'                                                       │ 10         │
+│ 121     │ '/de/terms-of-use'                                                   │ 10         │
+│ 122     │ '/de/privacy-policy'                                                 │ 10         │
+│ 123     │ '/de/platform/social-recognition'                                    │ 10         │
+│ 124     │ '/de/platform/conversations'                                         │ 10         │
+│ 125     │ '/de/platform/service-milestones'                                    │ 10         │
+│ 126     │ '/de/capabilities/team-awards'                                       │ 10         │
+│ 127     │ '/de/platform/life-events'                                           │ 10         │
+│ 128     │ '/de/capabilities/workhuman-iq'                                      │ 10         │
+│ 129     │ '/de/contact-us'                                                     │ 10         │
+│ 130     │ '/de/company/social-responsibility'                                  │ 10         │
+│ 131     │ '/de/why-workhuman'                                                  │ 10         │
+│ 132     │ '/de/capabilities/inclusion-advisor'                                 │ 10         │
+│ 133     │ '/de/capabilities/rewards'                                           │ 10         │
+│ 134     │ '/de/capabilities/integrations'                                      │ 10         │
+│ 135     │ '/de/company/careers'                                                │ 10         │
+│ 136     │ '/de/company/careers/technology'                                     │ 10         │
+│ 137     │ '/de/company/careers/human-experience-hx'                            │ 10         │
+│ 138     │ '/de/company/careers/strategy-consulting-research'                   │ 10         │
+│ 139     │ '/de/company/careers/finance-legal'                                  │ 10         │
+│ 140     │ '/de/company/careers/marketing'                                      │ 10         │
+│ 141     │ '/de/company/careers/operations'                                     │ 10         │
+│ 142     │ '/de/company/careers/e-commerce'                                     │ 10         │
+│ 143     │ '/de/company/careers/sales'                                          │ 10         │
+│ 144     │ '/de/company/careers/customer-strategy'                              │ 10         │
+│ 145     │ '/de/platform/community-celebrations'                                │ 10         │
+│ 146     │ '/de/platform/consulting-practice'                                   │ 10         │
+│ 147     │ '/de/platform'                                                       │ 10         │
+│ 148     │ '/de/why-workhuman/security-and-privacy'                             │ 10         │
+│ 149     │ '/de/thank-you'                                                      │ 10         │
+│ 150     │ '/de/product-documentation-experiences-redemption-early-adoption'    │ 10         │
+│ 151     │ '/de/product-updates'                                                │ 10         │
+│ 152     │ '/de/company/our-story'                                              │ 10         │
+│ 153     │ '/de/thank-you-demo'                                                 │ 10         │
+│ 154     │ '/de/safe-harbor'                                                    │ 10         │
+│ 155     │ '/de/smb-product-documentation'                                      │ 10         │
+│ 156     │ '/de/conv_product_documentation'                                     │ 10         │
+│ 157     │ '/de/corp_product_documentation'                                     │ 10         │
+│ 158     │ '/de/ent_product_documentation'                                      │ 10         │
+│ 159     │ '/de/workhuman-partner-policies'                                     │ 10         │
+│ 160     │ '/de/pricing-advantage'                                              │ 10         │
+│ 161     │ '/de/accessibility-statement'                                        │ 10         │
+│ 162     │ '/de/abm-template-example'                                           │ 10         │
+│ 163     │ '/de/impressum'                                                      │ 10         │
+│ 164     │ '/de/events/workhuman-live'                                          │ 10         │
+│ 165     │ '/de/company/our-customers'                                          │ 10         │
+│ 166     │ '/de/a-test-page-that-is-not-indexed'                                │ 10         │
+│ 167     │ '/fr/about-us'                                                       │ 10         │
+│ 168     │ '/fr/terms-of-use'                                                   │ 10         │
+│ 169     │ '/fr/privacy-policy'                                                 │ 10         │
+│ 170     │ '/fr/platform/social-recognition'                                    │ 10         │
+│ 171     │ '/fr/platform/conversations'                                         │ 10         │
+│ 172     │ '/fr/platform/service-milestones'                                    │ 10         │
+│ 173     │ '/fr/capabilities/team-awards'                                       │ 10         │
+│ 174     │ '/fr/platform/life-events'                                           │ 10         │
+│ 175     │ '/fr/capabilities/workhuman-iq'                                      │ 10         │
+│ 176     │ '/fr/contact-us'                                                     │ 10         │
+│ 177     │ '/fr/company/social-responsibility'                                  │ 10         │
+│ 178     │ '/fr/why-workhuman'                                                  │ 10         │
+│ 179     │ '/fr/capabilities/inclusion-advisor'                                 │ 10         │
+│ 180     │ '/fr/capabilities/rewards'                                           │ 10         │
+│ 181     │ '/fr/capabilities/integrations'                                      │ 10         │
+│ 182     │ '/fr/company/careers'                                                │ 10         │
+│ 183     │ '/fr/company/careers/technology'                                     │ 10         │
+│ 184     │ '/fr/company/careers/human-experience-hx'                            │ 10         │
+│ 185     │ '/fr/company/careers/strategy-consulting-research'                   │ 10         │
+│ 186     │ '/fr/company/careers/finance-legal'                                  │ 10         │
+│ 187     │ '/fr/company/careers/marketing'                                      │ 10         │
+│ 188     │ '/fr/company/careers/operations'                                     │ 10         │
+│ 189     │ '/fr/company/careers/e-commerce'                                     │ 10         │
+│ 190     │ '/fr/company/careers/sales'                                          │ 10         │
+│ 191     │ '/fr/company/careers/customer-strategy'                              │ 10         │
+│ 192     │ '/fr/platform/community-celebrations'                                │ 10         │
+│ 193     │ '/fr/platform/consulting-practice'                                   │ 10         │
+│ 194     │ '/fr/platform'                                                       │ 10         │
+│ 195     │ '/fr/why-workhuman/security-and-privacy'                             │ 10         │
+│ 196     │ '/fr/thank-you'                                                      │ 10         │
+│ 197     │ '/fr/product-documentation-experiences-redemption-early-adoption'    │ 10         │
+│ 198     │ '/fr/product-updates'                                                │ 10         │
+│ 199     │ '/fr/company/our-story'                                              │ 10         │
+│ 200     │ '/fr/thank-you-demo'                                                 │ 10         │
+│ 201     │ '/fr/safe-harbor'                                                    │ 10         │
+│ 202     │ '/fr/smb-product-documentation'                                      │ 10         │
+│ 203     │ '/fr/conv_product_documentation'                                     │ 10         │
+│ 204     │ '/fr/corp_product_documentation'                                     │ 10         │
+│ 205     │ '/fr/ent_product_documentation'                                      │ 10         │
+│ 206     │ '/fr/workhuman-partner-policies'                                     │ 10         │
+│ 207     │ '/fr/pricing-advantage'                                              │ 10         │
+│ 208     │ '/fr/accessibility-statement'                                        │ 10         │
+│ 209     │ '/fr/abm-template-example'                                           │ 10         │
+│ 210     │ '/fr/impressum'                                                      │ 10         │
+│ 211     │ '/fr/events/workhuman-live'                                          │ 10         │
+│ 212     │ '/fr/company/our-customers'                                          │ 10         │
+│ 213     │ '/fr/a-test-page-that-is-not-indexed'                                │ 10         │
+│ 214     │ '/en-US/resources/human-workplace-index/ire/page/1'                  │ 10         │
+│ 215     │ '/en-US/resources/reports-guides'                                    │ 10         │
+│ 216     │ '/de/resources/reports-guides'                                       │ 10         │
+│ 217     │ '/fr/resources/reports-guides'                                       │ 10         │
+│ 218     │ '/en-US/resources/thought-leadership'                                │ 10         │
+│ 219     │ '/de/resources/thought-leadership'                                   │ 10         │
+│ 220     │ '/fr/resources/thought-leadership'                                   │ 10         │
+│ 221     │ '/en-US/resources/human-workplace-index/usa/page/1'                  │ 10         │
+│ 222     │ '/en-US/company/careers/life-at-workhuman/page/1'                    │ 10         │
+│ 223     │ '/en-US/resources/product-briefs/page/1'                             │ 10         │
+│ 224     │ '/en-US/resources/thought-leadership/page/1'                         │ 10         │
+│ 225     │ '/en-US/why-workhuman/case-studies'                                  │ 10         │
+│ 226     │ '/de/why-workhuman/case-studies'                                     │ 10         │
+│ 227     │ '/fr/why-workhuman/case-studies'                                     │ 10         │
+│ 228     │ '/en-US/why-workhuman/customer-snapshots'                            │ 10         │
+│ 229     │ '/de/why-workhuman/customer-snapshots'                               │ 10         │
+│ 230     │ '/fr/why-workhuman/customer-snapshots'                               │ 10         │
+│ 231     │ '/en-US/events/webinars/page/1'                                      │ 10         │
+│ 232     │ '/en-US/resources/workhuman-podcasts/page/1'                         │ 10         │
+│ 233     │ '/en-US/why-workhuman/case-studies/page/1'                           │ 10         │
+│ 234     │ '/en-US/why-workhuman/customer-snapshots/page/1'                     │ 10         │
+│ 235     │ '/en-US/campaign/social-recognition'                                 │ 10         │
+│ 236     │ '/de/campaign/social-recognition'                                    │ 10         │
+│ 237     │ '/fr/campaign/social-recognition'                                    │ 10         │
+│ 238     │ '/en-US/topics/management-leadership'                                │ 10         │
+│ 239     │ '/en-US/topics/human-resources'                                      │ 10         │
+│ 240     │ '/en-US/topics/technology-leader'                                    │ 10         │
+│ 241     │ '/en-US/topics/emea'                                                 │ 10         │
+│ 242     │ '/en-US/topics/workhuman-live'                                       │ 10         │
+│ 243     │ '/en-US/topics/finance-leader'                                       │ 10         │
+│ 244     │ '/en-US/topics/team-building'                                        │ 10         │
+│ 245     │ '/en-US/topics/remote-work'                                          │ 10         │
+│ 246     │ '/en-US/topics/retention-and-turnover'                               │ 10         │
+│ 247     │ '/en-US/topics/healthcare-leader'                                    │ 10         │
+│ 248     │ '/en-US/topics/hr-leader'                                            │ 10         │
+│ 249     │ '/en-US/topics/talent-acquisition-leader'                            │ 10         │
+│ 250     │ '/en-US/topics/performance'                                          │ 10         │
+│ 251     │ '/en-US/topics/wellbeing'                                            │ 10         │
+│ 252     │ '/en-US/topics/future-of-work'                                       │ 10         │
+│ 253     │ '/en-US/topics/recognition'                                          │ 10         │
+│ 254     │ '/en-US/topics/feedback'                                             │ 10         │
+│ 255     │ '/en-US/topics/surveys'                                              │ 10         │
+│ 256     │ '/en-US/topics/appreciation'                                         │ 10         │
+│ 257     │ '/en-US/topics/compensation-benefits-leader'                         │ 10         │
+│ 258     │ '/en-US/topics/development'                                          │ 10         │
+│ 259     │ '/en-US/topics/future-of-dei'                                        │ 10         │
+│ 260     │ '/en-US/topics/engagement'                                           │ 10         │
+│ 261     │ '/en-US/topics/experience'                                           │ 10         │
+│ 262     │ '/en-US/topics/compensation-benefits'                                │ 10         │
+│ 263     │ '/en-US/topics/back-to-basics'                                       │ 10         │
+│ 264     │ '/en-US/topics/company-culture'                                      │ 10         │
+│ 265     │ '/en-US/topics/management-leadership/page/1'                         │ 10         │
+│ 266     │ '/en-US/topics/human-resources/page/1'                               │ 10         │
+│ 267     │ '/en-US/topics/technology-leader/page/1'                             │ 10         │
+│ 268     │ '/en-US/topics/emea/page/1'                                          │ 10         │
+│ 269     │ '/en-US/topics/workhuman-live/page/1'                                │ 10         │
+│ 270     │ '/en-US/topics/finance-leader/page/1'                                │ 10         │
+│ 271     │ '/en-US/topics/team-building/page/1'                                 │ 10         │
+│ 272     │ '/en-US/topics/remote-work/page/1'                                   │ 10         │
+│ 273     │ '/en-US/topics/retention-and-turnover/page/1'                        │ 10         │
+│ 274     │ '/en-US/topics/healthcare-leader/page/1'                             │ 10         │
+│ 275     │ '/en-US/topics/hr-leader/page/1'                                     │ 10         │
+│ 276     │ '/en-US/topics/talent-acquisition-leader/page/1'                     │ 10         │
+│ 277     │ '/en-US/topics/performance/page/1'                                   │ 10         │
+│ 278     │ '/en-US/topics/wellbeing/page/1'                                     │ 10         │
+│ 279     │ '/en-US/topics/future-of-work/page/1'                                │ 10         │
+│ 280     │ '/en-US/topics/recognition/page/1'                                   │ 10         │
+│ 281     │ '/en-US/topics/feedback/page/1'                                      │ 10         │
+│ 282     │ '/en-US/topics/surveys/page/1'                                       │ 10         │
+│ 283     │ '/en-US/topics/appreciation/page/1'                                  │ 10         │
+│ 284     │ '/en-US/topics/compensation-benefits-leader/page/1'                  │ 10         │
+│ 285     │ '/en-US/topics/development/page/1'                                   │ 10         │
+│ 286     │ '/en-US/topics/future-of-dei/page/1'                                 │ 10         │
+│ 287     │ '/en-US/topics/engagement/page/1'                                    │ 10         │
+│ 288     │ '/en-US/topics/experience/page/1'                                    │ 10         │
+│ 289     │ '/en-US/topics/compensation-benefits/page/1'                         │ 10         │
+│ 290     │ '/en-US/topics/back-to-basics/page/1'                                │ 10         │
+│ 291     │ '/en-US/topics/company-culture/page/1'                               │ 10         │
+│ 292     │ '/de/topics/management-leadership'                                   │ 10         │
+│ 293     │ '/de/topics/human-resources'                                         │ 10         │
+│ 294     │ '/de/topics/technology-leader'                                       │ 10         │
+│ 295     │ '/de/topics/emea'                                                    │ 10         │
+│ 296     │ '/de/topics/workhuman-live'                                          │ 10         │
+│ 297     │ '/de/topics/finance-leader'                                          │ 10         │
+│ 298     │ '/de/topics/team-building'                                           │ 10         │
+│ 299     │ '/de/topics/remote-work'                                             │ 10         │
+│ 300     │ '/de/topics/retention-and-turnover'                                  │ 10         │
+│ 301     │ '/de/topics/healthcare-leader'                                       │ 10         │
+│ 302     │ '/de/topics/hr-leader'                                               │ 10         │
+│ 303     │ '/de/topics/talent-acquisition-leader'                               │ 10         │
+│ 304     │ '/de/topics/performance'                                             │ 10         │
+│ 305     │ '/de/topics/wellbeing'                                               │ 10         │
+│ 306     │ '/de/topics/future-of-work'                                          │ 10         │
+│ 307     │ '/de/topics/recognition'                                             │ 10         │
+│ 308     │ '/de/topics/feedback'                                                │ 10         │
+│ 309     │ '/de/topics/surveys'                                                 │ 10         │
+│ 310     │ '/de/topics/appreciation'                                            │ 10         │
+│ 311     │ '/de/topics/compensation-benefits-leader'                            │ 10         │
+│ 312     │ '/de/topics/development'                                             │ 10         │
+│ 313     │ '/de/topics/future-of-dei'                                           │ 10         │
+│ 314     │ '/de/topics/engagement'                                              │ 10         │
+│ 315     │ '/de/topics/experience'                                              │ 10         │
+│ 316     │ '/de/topics/compensation-benefits'                                   │ 10         │
+│ 317     │ '/de/topics/back-to-basics'                                          │ 10         │
+│ 318     │ '/de/topics/company-culture'                                         │ 10         │
+│ 319     │ '/de/topics/emea/page/1'                                             │ 10         │
+│ 320     │ '/de/topics/retention-and-turnover/page/1'                           │ 10         │
+│ 321     │ '/de/topics/performance/page/1'                                      │ 10         │
+│ 322     │ '/de/topics/wellbeing/page/1'                                        │ 10         │
+│ 323     │ '/de/topics/future-of-work/page/1'                                   │ 10         │
+│ 324     │ '/de/topics/recognition/page/1'                                      │ 10         │
+│ 325     │ '/de/topics/feedback/page/1'                                         │ 10         │
+│ 326     │ '/de/topics/surveys/page/1'                                          │ 10         │
+│ 327     │ '/de/topics/appreciation/page/1'                                     │ 10         │
+│ 328     │ '/de/topics/development/page/1'                                      │ 10         │
+│ 329     │ '/de/topics/engagement/page/1'                                       │ 10         │
+│ 330     │ '/de/topics/experience/page/1'                                       │ 10         │
+│ 331     │ '/de/topics/back-to-basics/page/1'                                   │ 10         │
+│ 332     │ '/de/topics/company-culture/page/1'                                  │ 10         │
+│ 333     │ '/fr/topics/management-leadership'                                   │ 10         │
+│ 334     │ '/fr/topics/human-resources'                                         │ 10         │
+│ 335     │ '/fr/topics/technology-leader'                                       │ 10         │
+│ 336     │ '/fr/topics/emea'                                                    │ 10         │
+│ 337     │ '/fr/topics/workhuman-live'                                          │ 10         │
+│ 338     │ '/fr/topics/finance-leader'                                          │ 10         │
+│ 339     │ '/fr/topics/team-building'                                           │ 10         │
+│ 340     │ '/fr/topics/remote-work'                                             │ 10         │
+│ 341     │ '/fr/topics/retention-and-turnover'                                  │ 10         │
+│ 342     │ '/fr/topics/healthcare-leader'                                       │ 10         │
+│ 343     │ '/fr/topics/hr-leader'                                               │ 10         │
+│ 344     │ '/fr/topics/talent-acquisition-leader'                               │ 10         │
+│ 345     │ '/fr/topics/performance'                                             │ 10         │
+│ 346     │ '/fr/topics/wellbeing'                                               │ 10         │
+│ 347     │ '/fr/topics/future-of-work'                                          │ 10         │
+│ 348     │ '/fr/topics/recognition'                                             │ 10         │
+│ 349     │ '/fr/topics/feedback'                                                │ 10         │
+│ 350     │ '/fr/topics/surveys'                                                 │ 10         │
+│ 351     │ '/fr/topics/appreciation'                                            │ 10         │
+│ 352     │ '/fr/topics/compensation-benefits-leader'                            │ 10         │
+│ 353     │ '/fr/topics/development'                                             │ 10         │
+│ 354     │ '/fr/topics/future-of-dei'                                           │ 10         │
+│ 355     │ '/fr/topics/engagement'                                              │ 10         │
+│ 356     │ '/fr/topics/experience'                                              │ 10         │
+│ 357     │ '/fr/topics/compensation-benefits'                                   │ 10         │
+│ 358     │ '/fr/topics/back-to-basics'                                          │ 10         │
+│ 359     │ '/fr/topics/company-culture'                                         │ 10         │
+│ 360     │ '/fr/topics/emea/page/1'                                             │ 10         │
+│ 361     │ '/fr/topics/retention-and-turnover/page/1'                           │ 10         │
+│ 362     │ '/fr/topics/performance/page/1'                                      │ 10         │
+│ 363     │ '/fr/topics/wellbeing/page/1'                                        │ 10         │
+│ 364     │ '/fr/topics/future-of-work/page/1'                                   │ 10         │
+│ 365     │ '/fr/topics/recognition/page/1'                                      │ 10         │
+│ 366     │ '/fr/topics/feedback/page/1'                                         │ 10         │
+│ 367     │ '/fr/topics/surveys/page/1'                                          │ 10         │
+│ 368     │ '/fr/topics/appreciation/page/1'                                     │ 10         │
+│ 369     │ '/fr/topics/development/page/1'                                      │ 10         │
+│ 370     │ '/fr/topics/engagement/page/1'                                       │ 10         │
+│ 371     │ '/fr/topics/experience/page/1'                                       │ 10         │
+│ 372     │ '/fr/topics/back-to-basics/page/1'                                   │ 10         │
+│ 373     │ '/fr/topics/company-culture/page/1'                                  │ 10         │
+└─────────┴──────────────────────────────────────────────────────────────────────┴────────────┘
+You are not using Netlify Edge Functions for image format detection. Set env var "NEXT_FORCE_EDGE_IMAGES=true" to enable.
+​
+(@netlify/plugin-nextjs onBuild completed in 1.3s)
+​
+Functions bundling
+────────────────────────────────────────────────────────────────
+​
+Packaging Functions from apps/web/.netlify/functions-internal directory:
+ - ___netlify-handler/___netlify-handler.js
+ - ___netlify-odb-handler/___netlify-odb-handler.js
+ - _ipx/_ipx.js
+​
+Packaging Functions from apps/web/netlify/functions directory:
+ - deploy-succeeded-background.ts
+ - life-at-workhuman-rss.ts
+ - rss.ts
+​
+​
+(Functions bundling completed in 28.1s)
+​
+Edge Functions bundling
+────────────────────────────────────────────────────────────────
+​
+Packaging Edge Functions from apps/web/netlify/edge-functions directory:
+ - add-slash
+​
+(Edge Functions bundling completed in 592ms)
+​
+@netlify/plugin-nextjs (onPostBuild event)
+────────────────────────────────────────────────────────────────
+​
+Next.js cache saved.
+Using background API routes
+If your account type does not support background functions, the deploy will fail.
+During local development, background API routes will run as regular API routes, but in production they will immediately return an empty "202 Accepted" response.
+​
+(@netlify/plugin-nextjs onPostBuild completed in 2s)
+​
+Save updated config
+────────────────────────────────────────────────────────────────
+​
+​
+(options.onEnd completed in 27ms)
+​
+Netlify Build Complete
+────────────────────────────────────────────────────────────────
+​
+(Netlify Build completed in 1m 13.6s)
