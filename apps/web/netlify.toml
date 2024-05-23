@@ -2,37 +2,8 @@
 # all contexts unless otherwise overridden by more specific contexts.
 [build]
   ignore = "npx turbo-ignore"
-  publish = "./apps/web/.next/"
-  command = "npx turbo run build --filter='web'"
-
-[functions]
-  included_files = [
-
-    "!../../node_modules/sharp/vendor/*",
-
-    "!../../node_modules/@esbuild/*",
-
-    "!../../node_modules/@esbuild/*",
-
-    "!../../node_modules/@swc/core-linux-x64-musl/*",
-
-    "!../../node_modules/@swc/core-linux-x64-gnu/*",
-
-    "!../../node_modules/@swc/core-darwin-x64/*",
-
-    "!../../node_modules/sharp/vendor/8.14.5/linux-x64/lib/libvips-cpp.so.42",
-
-    "!../../node_modules/@esbuild/linux-x64/bin/esbuild",
-
-    "!../../node_modules/esbuild/lib/downloaded-@esbuild-linux-x64-esbuild",
-
-    "!../../node_modules/esbuild/lib/downloaded-@esbuild-linux-x64-esbuild",
-
-    "!../../node_modules/@fortawesome/pro-regular-svg-icons/index.js",
-
-    "!../../node_modules/@fortawesome/pro-solid-svg-icons/index.js",
-
-  ]
+  publish = "./.next/"
+  command = "npx turbo run build --filter='web' && echo 'list all files before npm i' && ls -la && echo 'run npm i' && npm i && echo 'after npm i' && ls -la"
 
 [[redirects]]
   force = true
